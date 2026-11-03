@@ -1,0 +1,715 @@
+{
+  "id": "ice-detention-management",
+  "data_license": "CC0-1.0",
+  "downloads": [
+    {
+      "url": "https://raw.githubusercontent.com/deportationdata/ice-detention-management/5126c6e8482cb8d28d5a7704e96a9cab0df8b528/data/detention-management-parquet.zip",
+      "bytes": 2133465,
+      "sha256": "1cca746d5caad9e7cf2e037e91984c98a18325a41d7b1a6fc2637b1f89ba3fe0",
+      "local_path": "sources/detention-management-parquet.zip",
+      "members": [
+        {
+          "file": "adp-and-stay-length-by-agency-fy-ytd.parquet",
+          "bytes": 28757,
+          "sha256": "be5e12df6e2d7a0b44f106b809f3aa0210bd4ad9305191fd7879865d3de07e69",
+          "git_lfs_blob": "b44aef49de7020f90919bac0dd71722b3f6979cf"
+        },
+        {
+          "file": "adp-and-stay-length-by-agency-monthly.parquet",
+          "bytes": 19700,
+          "sha256": "27a9969b5b68751cc58a71f9e3bfe427f875a2e3984f44c0781882ebeb32207f",
+          "git_lfs_blob": "cbc148eb74a75c561d7394509a5b9d1ca945019d"
+        },
+        {
+          "file": "atd-by-aor.parquet",
+          "bytes": 173709,
+          "sha256": "39d87fb5525b374b60db493e7c7308070ed1b991f3dde0916363431e36cb77bd",
+          "git_lfs_blob": "e703a5fa83c47c8a16e863ce3f2e271501012b58"
+        },
+        {
+          "file": "atd-court-appearances.parquet",
+          "bytes": 5880,
+          "sha256": "99c60d89623eaf888eb91698d8c6f8f5f07b76eb9806381ceecfe4ee8fde6352",
+          "git_lfs_blob": "a689b35f94b7ab3415e80393e0fcc124c52b0641"
+        },
+        {
+          "file": "atd-population.parquet",
+          "bytes": 16368,
+          "sha256": "cf24b6f4d8f19343962b49931a69a7dfcc1c67e9431a3d986c18c95ae0ea852f",
+          "git_lfs_blob": "ecde5c5c034645aa9acb15f642a78eec0007461b"
+        },
+        {
+          "file": "bond-stats.parquet",
+          "bytes": 4996,
+          "sha256": "7605e7d45ede09e1198b729dfd408417bbee4de4e7b296d8ac47d4c81e832dce",
+          "git_lfs_blob": "b285aea40fcb207fc1f811c6f5be2c5a3240f9c9"
+        },
+        {
+          "file": "book-ins-by-arresting-agency-fy-ytd.parquet",
+          "bytes": 4663,
+          "sha256": "e53882983ee1e5dfbb87f4293c5e744d3b220edb080b1120a885bc8db176e9e2",
+          "git_lfs_blob": "344530cc935df6ae879194a46fc5e06b425ed727"
+        },
+        {
+          "file": "book-ins-by-arresting-agency-monthly.parquet",
+          "bytes": 3621,
+          "sha256": "427ef17c5527eacdf7205ee076d8904fb17466e37d781dfceb31ae46d03a51de",
+          "git_lfs_blob": "d5075eea4da90053b84eaaf13d82af0acdc25088"
+        },
+        {
+          "file": "book-outs-by-reason-fy-ytd.parquet",
+          "bytes": 22079,
+          "sha256": "6b5059920a90c3091692327d153cd848aa992404d077012460f08299f669501f",
+          "git_lfs_blob": "d667c8fcaba692f4105e7352b6ccd259ca12e0c0"
+        },
+        {
+          "file": "book-outs-by-reason-monthly.parquet",
+          "bytes": 12239,
+          "sha256": "4a8f392aee782695663570a86e7c99ec03ec5d3a049f24acbd8fe5c295068068",
+          "git_lfs_blob": "fb031c7eada337edd65e1e33d861e7259fedb4cf"
+        },
+        {
+          "file": "currently-detained-by-criminality.parquet",
+          "bytes": 18052,
+          "sha256": "d9988d57a5ced7987dfcf2b56a2a024b1d170b21f05e535fce8b5ae466746672",
+          "git_lfs_blob": "a4abfe4861e3bcf8ca40b46e8da3a1707d4deb3c"
+        },
+        {
+          "file": "currently-detained-by-disposition.parquet",
+          "bytes": 9623,
+          "sha256": "999bf603dce49b39a526ebc8fa969a7e1b4c752fefb8da5b10908c3052861274",
+          "git_lfs_blob": "6ee98b9509396ff7cfaaf03348dfd1af2ee9b62a"
+        },
+        {
+          "file": "facilities.parquet",
+          "bytes": 2158925,
+          "sha256": "b9afa01df3106f0c8fe0cef4c2e24ac9d62c41ddfc6a048eb64d0d994164d0d7",
+          "git_lfs_blob": "fb8c82febac63127caf3f14974f8e95326baf617"
+        },
+        {
+          "file": "facility-alos.parquet",
+          "bytes": 35337,
+          "sha256": "59192d17de9190022d7bf0d2c2f584c7adf46ec3374d9ba3fa4db266b390f348",
+          "git_lfs_blob": "0eda5fb5d6f08d88c8eb5ccd7ef815b0363366ee"
+        },
+        {
+          "file": "fear-decision-time.parquet",
+          "bytes": 1642,
+          "sha256": "6f7e210be987f3f22b0d6c7cd19adf6c76460cd069473e18409d221a31e7da4d",
+          "git_lfs_blob": "7d9060e0af9af92b8308b70a85e6c2eb6df51aad"
+        },
+        {
+          "file": "fear-decisions-by-facility-type.parquet",
+          "bytes": 3203,
+          "sha256": "63b784464709757086345bb2b9b39f191980e6fc024a658d2a599e52eb17e349",
+          "git_lfs_blob": "eccd8e7e988074f1db942f2446af0381d11df670"
+        },
+        {
+          "file": "iclos-and-detainees.parquet",
+          "bytes": 10386,
+          "sha256": "64a00e7f2b402e485b931fb161bbf53d946d1ac57ea4361a99fc43af42382138",
+          "git_lfs_blob": "ffcc513089809afe3022952b57d8752f398c02f4"
+        },
+        {
+          "file": "movements-by-facility-type.parquet",
+          "bytes": 10461,
+          "sha256": "111d9530bd0c85dea0cc216c958edc33abaf334f87a3f922cbcdef6efdfe3092",
+          "git_lfs_blob": "f22ab3d0998daa96c386f75d6a6ff64515aec425"
+        },
+        {
+          "file": "removals.parquet",
+          "bytes": 3477,
+          "sha256": "b24e0d186cab8e66e28e9fac2ffddba5b65498bef4d2b3fa2e3123de723cff97",
+          "git_lfs_blob": "3e74f7b995c10f9d717d29386d5081e3bb749226"
+        },
+        {
+          "file": "segregation.parquet",
+          "bytes": 6712,
+          "sha256": "b034679683038c22b7d13e5603cc8f647e617e6f80dd3c7afa70ac5e0032218b",
+          "git_lfs_blob": "aee95fc423c57cba1271e381772ec0cfb449fc91"
+        },
+        {
+          "file": "special-population-actions.parquet",
+          "bytes": 3785,
+          "sha256": "d56a9db42d670982b357e69b4eb836c4b1fca21b4f5f060f316921e33184c6aa",
+          "git_lfs_blob": "361da0c45f5d01427ad57587fa5bd958b1861b3e"
+        },
+        {
+          "file": "vulnerable-population.parquet",
+          "bytes": 4587,
+          "sha256": "76eb40fa194dbc2913c6f906642c10270395aff86e8f34adaa087fd64aed0997",
+          "git_lfs_blob": "c99b1779fcf2591366b7850ed426d5743d720be0"
+        }
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "table": "dtm_adp_and_stay_length_by_agency_fy_ytd",
+      "file": "adp-and-stay-length-by-agency-fy-ytd.parquet",
+      "rows": 1551,
+      "bytes": 28757,
+      "sha256": "be5e12df6e2d7a0b44f106b809f3aa0210bd4ad9305191fd7879865d3de07e69",
+      "candidate_keys_from_parser": [
+        "agency",
+        "criminality",
+        "fiscal_year",
+        "pull_date"
+      ],
+      "temporal_semantics": "snapshot",
+      "unit": "FY-to-date average daily population (people) and mean stay length (days)",
+      "local_path": "sources/adp-and-stay-length-by-agency-fy-ytd.parquet",
+      "source": {
+        "repo": "deportationdata/ice-detention-management",
+        "commit": "5126c6e8482cb8d28d5a7704e96a9cab0df8b528",
+        "path": "data/detention-management-parquet.zip",
+        "url": "https://raw.githubusercontent.com/deportationdata/ice-detention-management/5126c6e8482cb8d28d5a7704e96a9cab0df8b528/data/detention-management-parquet.zip",
+        "bytes": 2133465,
+        "sha256": "1cca746d5caad9e7cf2e037e91984c98a18325a41d7b1a6fc2637b1f89ba3fe0",
+        "git_blob_verified": "ca8f3ca43e9fa659c8d16d00624f57a6e99f1867",
+        "data_license": "CC0-1.0",
+        "hash_verified": true
+      }
+    },
+    {
+      "table": "dtm_adp_and_stay_length_by_agency_monthly",
+      "file": "adp-and-stay-length-by-agency-monthly.parquet",
+      "rows": 1164,
+      "bytes": 19700,
+      "sha256": "27a9969b5b68751cc58a71f9e3bfe427f875a2e3984f44c0781882ebeb32207f",
+      "candidate_keys_from_parser": [
+        "agency",
+        "criminality",
+        "date"
+      ],
+      "temporal_semantics": "latest_cell",
+      "unit": "Monthly average daily population (people) and mean stay length (days)",
+      "local_path": "sources/adp-and-stay-length-by-agency-monthly.parquet",
+      "source": {
+        "repo": "deportationdata/ice-detention-management",
+        "commit": "5126c6e8482cb8d28d5a7704e96a9cab0df8b528",
+        "path": "data/detention-management-parquet.zip",
+        "url": "https://raw.githubusercontent.com/deportationdata/ice-detention-management/5126c6e8482cb8d28d5a7704e96a9cab0df8b528/data/detention-management-parquet.zip",
+        "bytes": 2133465,
+        "sha256": "1cca746d5caad9e7cf2e037e91984c98a18325a41d7b1a6fc2637b1f89ba3fe0",
+        "git_blob_verified": "ca8f3ca43e9fa659c8d16d00624f57a6e99f1867",
+        "data_license": "CC0-1.0",
+        "hash_verified": true
+      }
+    },
+    {
+      "table": "dtm_atd_by_aor",
+      "file": "atd-by-aor.parquet",
+      "rows": 14657,
+      "bytes": 173709,
+      "sha256": "39d87fb5525b374b60db493e7c7308070ed1b991f3dde0916363431e36cb77bd",
+      "candidate_keys_from_parser": [
+        "aor",
+        "technology",
+        "pull_date"
+      ],
+      "temporal_semantics": "snapshot",
+      "unit": "Active alternative-to-detention participants and average days in program by AOR/technology; nullable technology is a subtotal",
+      "local_path": "sources/atd-by-aor.parquet",
+      "source": {
+        "repo": "deportationdata/ice-detention-management",
+        "commit": "5126c6e8482cb8d28d5a7704e96a9cab0df8b528",
+        "path": "data/detention-management-parquet.zip",
+        "url": "https://raw.githubusercontent.com/deportationdata/ice-detention-management/5126c6e8482cb8d28d5a7704e96a9cab0df8b528/data/detention-management-parquet.zip",
+        "bytes": 2133465,
+        "sha256": "1cca746d5caad9e7cf2e037e91984c98a18325a41d7b1a6fc2637b1f89ba3fe0",
+        "git_blob_verified": "ca8f3ca43e9fa659c8d16d00624f57a6e99f1867",
+        "data_license": "CC0-1.0",
+        "hash_verified": true
+      }
+    },
+    {
+      "table": "dtm_atd_court_appearances",
+      "file": "atd-court-appearances.parquet",
+      "rows": 462,
+      "bytes": 5880,
+      "sha256": "99c60d89623eaf888eb91698d8c6f8f5f07b76eb9806381ceecfe4ee8fde6352",
+      "candidate_keys_from_parser": [
+        "hearing_type",
+        "metric",
+        "pull_date"
+      ],
+      "temporal_semantics": "snapshot",
+      "unit": "Appearance count and percentage by hearing type and outcome; includes totals",
+      "local_path": "sources/atd-court-appearances.parquet",
+      "source": {
+        "repo": "deportationdata/ice-detention-management",
+        "commit": "5126c6e8482cb8d28d5a7704e96a9cab0df8b528",
+        "path": "data/detention-management-parquet.zip",
+        "url": "https://raw.githubusercontent.com/deportationdata/ice-detention-management/5126c6e8482cb8d28d5a7704e96a9cab0df8b528/data/detention-management-parquet.zip",
+        "bytes": 2133465,
+        "sha256": "1cca746d5caad9e7cf2e037e91984c98a18325a41d7b1a6fc2637b1f89ba3fe0",
+        "git_blob_verified": "ca8f3ca43e9fa659c8d16d00624f57a6e99f1867",
+        "data_license": "CC0-1.0",
+        "hash_verified": true
+      }
+    },
+    {
+      "table": "dtm_atd_population",
+      "file": "atd-population.parquet",
+      "rows": 1099,
+      "bytes": 16368,
+      "sha256": "cf24b6f4d8f19343962b49931a69a7dfcc1c67e9431a3d986c18c95ae0ea852f",
+      "candidate_keys_from_parser": [
+        "table",
+        "category",
+        "pull_date"
+      ],
+      "temporal_semantics": "snapshot",
+      "unit": "Active participants; technology rows report daily cost USD, status rows report ALIP days",
+      "local_path": "sources/atd-population.parquet",
+      "source": {
+        "repo": "deportationdata/ice-detention-management",
+        "commit": "5126c6e8482cb8d28d5a7704e96a9cab0df8b528",
+        "path": "data/detention-management-parquet.zip",
+        "url": "https://raw.githubusercontent.com/deportationdata/ice-detention-management/5126c6e8482cb8d28d5a7704e96a9cab0df8b528/data/detention-management-parquet.zip",
+        "bytes": 2133465,
+        "sha256": "1cca746d5caad9e7cf2e037e91984c98a18325a41d7b1a6fc2637b1f89ba3fe0",
+        "git_blob_verified": "ca8f3ca43e9fa659c8d16d00624f57a6e99f1867",
+        "data_license": "CC0-1.0",
+        "hash_verified": true
+      }
+    },
+    {
+      "table": "dtm_bond_stats",
+      "file": "bond-stats.parquet",
+      "rows": 330,
+      "bytes": 4996,
+      "sha256": "7605e7d45ede09e1198b729dfd408417bbee4de4e7b296d8ac47d4c81e832dce",
+      "candidate_keys_from_parser": [
+        "date",
+        "metric"
+      ],
+      "temporal_semantics": "latest_cell",
+      "unit": "Counts, percent, USD average bond, or ALOS days, distinguished by unit",
+      "local_path": "sources/bond-stats.parquet",
+      "source": {
+        "repo": "deportationdata/ice-detention-management",
+        "commit": "5126c6e8482cb8d28d5a7704e96a9cab0df8b528",
+        "path": "data/detention-management-parquet.zip",
+        "url": "https://raw.githubusercontent.com/deportationdata/ice-detention-management/5126c6e8482cb8d28d5a7704e96a9cab0df8b528/data/detention-management-parquet.zip",
+        "bytes": 2133465,
+        "sha256": "1cca746d5caad9e7cf2e037e91984c98a18325a41d7b1a6fc2637b1f89ba3fe0",
+        "git_blob_verified": "ca8f3ca43e9fa659c8d16d00624f57a6e99f1867",
+        "data_license": "CC0-1.0",
+        "hash_verified": true
+      }
+    },
+    {
+      "table": "dtm_book_ins_by_arresting_agency_fy_ytd",
+      "file": "book-ins-by-arresting-agency-fy-ytd.parquet",
+      "rows": 387,
+      "bytes": 4663,
+      "sha256": "e53882983ee1e5dfbb87f4293c5e744d3b220edb080b1120a885bc8db176e9e2",
+      "candidate_keys_from_parser": [
+        "arresting_agency",
+        "fiscal_year",
+        "pull_date"
+      ],
+      "temporal_semantics": "snapshot",
+      "unit": "FY-to-date count of book-ins by ICE/CBP/Total",
+      "local_path": "sources/book-ins-by-arresting-agency-fy-ytd.parquet",
+      "source": {
+        "repo": "deportationdata/ice-detention-management",
+        "commit": "5126c6e8482cb8d28d5a7704e96a9cab0df8b528",
+        "path": "data/detention-management-parquet.zip",
+        "url": "https://raw.githubusercontent.com/deportationdata/ice-detention-management/5126c6e8482cb8d28d5a7704e96a9cab0df8b528/data/detention-management-parquet.zip",
+        "bytes": 2133465,
+        "sha256": "1cca746d5caad9e7cf2e037e91984c98a18325a41d7b1a6fc2637b1f89ba3fe0",
+        "git_blob_verified": "ca8f3ca43e9fa659c8d16d00624f57a6e99f1867",
+        "data_license": "CC0-1.0",
+        "hash_verified": true
+      }
+    },
+    {
+      "table": "dtm_book_ins_by_arresting_agency_monthly",
+      "file": "book-ins-by-arresting-agency-monthly.parquet",
+      "rows": 282,
+      "bytes": 3621,
+      "sha256": "427ef17c5527eacdf7205ee076d8904fb17466e37d781dfceb31ae46d03a51de",
+      "candidate_keys_from_parser": [
+        "arresting_agency",
+        "date"
+      ],
+      "temporal_semantics": "latest_cell",
+      "unit": "Monthly book-in count by ICE/CBP/Total",
+      "local_path": "sources/book-ins-by-arresting-agency-monthly.parquet",
+      "source": {
+        "repo": "deportationdata/ice-detention-management",
+        "commit": "5126c6e8482cb8d28d5a7704e96a9cab0df8b528",
+        "path": "data/detention-management-parquet.zip",
+        "url": "https://raw.githubusercontent.com/deportationdata/ice-detention-management/5126c6e8482cb8d28d5a7704e96a9cab0df8b528/data/detention-management-parquet.zip",
+        "bytes": 2133465,
+        "sha256": "1cca746d5caad9e7cf2e037e91984c98a18325a41d7b1a6fc2637b1f89ba3fe0",
+        "git_blob_verified": "ca8f3ca43e9fa659c8d16d00624f57a6e99f1867",
+        "data_license": "CC0-1.0",
+        "hash_verified": true
+      }
+    },
+    {
+      "table": "dtm_book_outs_by_reason_fy_ytd",
+      "file": "book-outs-by-reason-fy-ytd.parquet",
+      "rows": 4521,
+      "bytes": 22079,
+      "sha256": "6b5059920a90c3091692327d153cd848aa992404d077012460f08299f669501f",
+      "candidate_keys_from_parser": [
+        "release_reason",
+        "criminality",
+        "fiscal_year",
+        "pull_date"
+      ],
+      "temporal_semantics": "snapshot",
+      "unit": "FY-to-date final release/book-out count by reason and criminality",
+      "local_path": "sources/book-outs-by-reason-fy-ytd.parquet",
+      "source": {
+        "repo": "deportationdata/ice-detention-management",
+        "commit": "5126c6e8482cb8d28d5a7704e96a9cab0df8b528",
+        "path": "data/detention-management-parquet.zip",
+        "url": "https://raw.githubusercontent.com/deportationdata/ice-detention-management/5126c6e8482cb8d28d5a7704e96a9cab0df8b528/data/detention-management-parquet.zip",
+        "bytes": 2133465,
+        "sha256": "1cca746d5caad9e7cf2e037e91984c98a18325a41d7b1a6fc2637b1f89ba3fe0",
+        "git_blob_verified": "ca8f3ca43e9fa659c8d16d00624f57a6e99f1867",
+        "data_license": "CC0-1.0",
+        "hash_verified": true
+      }
+    },
+    {
+      "table": "dtm_book_outs_by_reason_monthly",
+      "file": "book-outs-by-reason-monthly.parquet",
+      "rows": 2606,
+      "bytes": 12239,
+      "sha256": "4a8f392aee782695663570a86e7c99ec03ec5d3a049f24acbd8fe5c295068068",
+      "candidate_keys_from_parser": [
+        "release_reason",
+        "criminality",
+        "date"
+      ],
+      "temporal_semantics": "latest_cell",
+      "unit": "Monthly final release/book-out count by reason and criminality",
+      "local_path": "sources/book-outs-by-reason-monthly.parquet",
+      "source": {
+        "repo": "deportationdata/ice-detention-management",
+        "commit": "5126c6e8482cb8d28d5a7704e96a9cab0df8b528",
+        "path": "data/detention-management-parquet.zip",
+        "url": "https://raw.githubusercontent.com/deportationdata/ice-detention-management/5126c6e8482cb8d28d5a7704e96a9cab0df8b528/data/detention-management-parquet.zip",
+        "bytes": 2133465,
+        "sha256": "1cca746d5caad9e7cf2e037e91984c98a18325a41d7b1a6fc2637b1f89ba3fe0",
+        "git_blob_verified": "ca8f3ca43e9fa659c8d16d00624f57a6e99f1867",
+        "data_license": "CC0-1.0",
+        "hash_verified": true
+      }
+    },
+    {
+      "table": "dtm_currently_detained_by_criminality",
+      "file": "currently-detained-by-criminality.parquet",
+      "rows": 1536,
+      "bytes": 18052,
+      "sha256": "d9988d57a5ced7987dfcf2b56a2a024b1d170b21f05e535fce8b5ae466746672",
+      "candidate_keys_from_parser": [
+        "criminality",
+        "arresting_agency",
+        "pull_date"
+      ],
+      "temporal_semantics": "snapshot",
+      "unit": "Detained population count and arresting-agency share within each criminality category (fraction; source rounding retained)",
+      "local_path": "sources/currently-detained-by-criminality.parquet",
+      "source": {
+        "repo": "deportationdata/ice-detention-management",
+        "commit": "5126c6e8482cb8d28d5a7704e96a9cab0df8b528",
+        "path": "data/detention-management-parquet.zip",
+        "url": "https://raw.githubusercontent.com/deportationdata/ice-detention-management/5126c6e8482cb8d28d5a7704e96a9cab0df8b528/data/detention-management-parquet.zip",
+        "bytes": 2133465,
+        "sha256": "1cca746d5caad9e7cf2e037e91984c98a18325a41d7b1a6fc2637b1f89ba3fe0",
+        "git_blob_verified": "ca8f3ca43e9fa659c8d16d00624f57a6e99f1867",
+        "data_license": "CC0-1.0",
+        "hash_verified": true
+      }
+    },
+    {
+      "table": "dtm_currently_detained_by_disposition",
+      "file": "currently-detained-by-disposition.parquet",
+      "rows": 1738,
+      "bytes": 9623,
+      "sha256": "999bf603dce49b39a526ebc8fa969a7e1b4c752fefb8da5b10908c3052861274",
+      "candidate_keys_from_parser": [
+        "disposition",
+        "facility_type",
+        "pull_date"
+      ],
+      "temporal_semantics": "snapshot",
+      "unit": "Current detention population count by processing disposition and facility type",
+      "local_path": "sources/currently-detained-by-disposition.parquet",
+      "source": {
+        "repo": "deportationdata/ice-detention-management",
+        "commit": "5126c6e8482cb8d28d5a7704e96a9cab0df8b528",
+        "path": "data/detention-management-parquet.zip",
+        "url": "https://raw.githubusercontent.com/deportationdata/ice-detention-management/5126c6e8482cb8d28d5a7704e96a9cab0df8b528/data/detention-management-parquet.zip",
+        "bytes": 2133465,
+        "sha256": "1cca746d5caad9e7cf2e037e91984c98a18325a41d7b1a6fc2637b1f89ba3fe0",
+        "git_blob_verified": "ca8f3ca43e9fa659c8d16d00624f57a6e99f1867",
+        "data_license": "CC0-1.0",
+        "hash_verified": true
+      }
+    },
+    {
+      "table": "dtm_facilities",
+      "file": "facilities.parquet",
+      "rows": 20430,
+      "bytes": 2158925,
+      "sha256": "b9afa01df3106f0c8fe0cef4c2e24ac9d62c41ddfc6a048eb64d0d994164d0d7",
+      "candidate_keys_from_parser": [],
+      "temporal_semantics": "snapshot",
+      "unit": "Facility-by-release characteristics: beds, threat composition, inspection information; not the geocoded facility directory",
+      "local_path": "sources/facilities.parquet",
+      "source": {
+        "repo": "deportationdata/ice-detention-management",
+        "commit": "5126c6e8482cb8d28d5a7704e96a9cab0df8b528",
+        "path": "data/detention-management-parquet.zip",
+        "url": "https://raw.githubusercontent.com/deportationdata/ice-detention-management/5126c6e8482cb8d28d5a7704e96a9cab0df8b528/data/detention-management-parquet.zip",
+        "bytes": 2133465,
+        "sha256": "1cca746d5caad9e7cf2e037e91984c98a18325a41d7b1a6fc2637b1f89ba3fe0",
+        "git_blob_verified": "ca8f3ca43e9fa659c8d16d00624f57a6e99f1867",
+        "data_license": "CC0-1.0",
+        "hash_verified": true
+      }
+    },
+    {
+      "table": "dtm_facility_alos",
+      "file": "facility-alos.parquet",
+      "rows": 2045,
+      "bytes": 35337,
+      "sha256": "59192d17de9190022d7bf0d2c2f584c7adf46ec3374d9ba3fa4db266b390f348",
+      "candidate_keys_from_parser": [
+        "name",
+        "alos_fiscal_year"
+      ],
+      "temporal_semantics": "latest_cell",
+      "unit": "Annual mean stay length (days) for named facility",
+      "local_path": "sources/facility-alos.parquet",
+      "source": {
+        "repo": "deportationdata/ice-detention-management",
+        "commit": "5126c6e8482cb8d28d5a7704e96a9cab0df8b528",
+        "path": "data/detention-management-parquet.zip",
+        "url": "https://raw.githubusercontent.com/deportationdata/ice-detention-management/5126c6e8482cb8d28d5a7704e96a9cab0df8b528/data/detention-management-parquet.zip",
+        "bytes": 2133465,
+        "sha256": "1cca746d5caad9e7cf2e037e91984c98a18325a41d7b1a6fc2637b1f89ba3fe0",
+        "git_blob_verified": "ca8f3ca43e9fa659c8d16d00624f57a6e99f1867",
+        "data_license": "CC0-1.0",
+        "hash_verified": true
+      }
+    },
+    {
+      "table": "dtm_fear_decision_time",
+      "file": "fear-decision-time.parquet",
+      "rows": 21,
+      "bytes": 1642,
+      "sha256": "6f7e210be987f3f22b0d6c7cd19adf6c76460cd069473e18409d221a31e7da4d",
+      "candidate_keys_from_parser": [
+        "data_fiscal_year",
+        "facility_type"
+      ],
+      "temporal_semantics": "latest_cell",
+      "unit": "Time from USCIS fear decision to ICE release (days), fiscal-year/facility-type series",
+      "local_path": "sources/fear-decision-time.parquet",
+      "source": {
+        "repo": "deportationdata/ice-detention-management",
+        "commit": "5126c6e8482cb8d28d5a7704e96a9cab0df8b528",
+        "path": "data/detention-management-parquet.zip",
+        "url": "https://raw.githubusercontent.com/deportationdata/ice-detention-management/5126c6e8482cb8d28d5a7704e96a9cab0df8b528/data/detention-management-parquet.zip",
+        "bytes": 2133465,
+        "sha256": "1cca746d5caad9e7cf2e037e91984c98a18325a41d7b1a6fc2637b1f89ba3fe0",
+        "git_blob_verified": "ca8f3ca43e9fa659c8d16d00624f57a6e99f1867",
+        "data_license": "CC0-1.0",
+        "hash_verified": true
+      }
+    },
+    {
+      "table": "dtm_fear_decisions_by_facility_type",
+      "file": "fear-decisions-by-facility-type.parquet",
+      "rows": 348,
+      "bytes": 3203,
+      "sha256": "63b784464709757086345bb2b9b39f191980e6fc024a658d2a599e52eb17e349",
+      "candidate_keys_from_parser": [
+        "facility_type",
+        "pull_date"
+      ],
+      "temporal_semantics": "snapshot",
+      "unit": "Current detained count in fear-decision source table by facility type",
+      "local_path": "sources/fear-decisions-by-facility-type.parquet",
+      "source": {
+        "repo": "deportationdata/ice-detention-management",
+        "commit": "5126c6e8482cb8d28d5a7704e96a9cab0df8b528",
+        "path": "data/detention-management-parquet.zip",
+        "url": "https://raw.githubusercontent.com/deportationdata/ice-detention-management/5126c6e8482cb8d28d5a7704e96a9cab0df8b528/data/detention-management-parquet.zip",
+        "bytes": 2133465,
+        "sha256": "1cca746d5caad9e7cf2e037e91984c98a18325a41d7b1a6fc2637b1f89ba3fe0",
+        "git_blob_verified": "ca8f3ca43e9fa659c8d16d00624f57a6e99f1867",
+        "data_license": "CC0-1.0",
+        "hash_verified": true
+      }
+    },
+    {
+      "table": "dtm_iclos_and_detainees",
+      "file": "iclos-and-detainees.parquet",
+      "rows": 1665,
+      "bytes": 10386,
+      "sha256": "64a00e7f2b402e485b931fb161bbf53d946d1ac57ea4361a99fc43af42382138",
+      "candidate_keys_from_parser": [
+        "section",
+        "population_type",
+        "duration_bucket",
+        "date",
+        "period"
+      ],
+      "temporal_semantics": "latest_cell",
+      "unit": "Mid/end-month population count by ICLOS/detainees section and duration bucket",
+      "local_path": "sources/iclos-and-detainees.parquet",
+      "source": {
+        "repo": "deportationdata/ice-detention-management",
+        "commit": "5126c6e8482cb8d28d5a7704e96a9cab0df8b528",
+        "path": "data/detention-management-parquet.zip",
+        "url": "https://raw.githubusercontent.com/deportationdata/ice-detention-management/5126c6e8482cb8d28d5a7704e96a9cab0df8b528/data/detention-management-parquet.zip",
+        "bytes": 2133465,
+        "sha256": "1cca746d5caad9e7cf2e037e91984c98a18325a41d7b1a6fc2637b1f89ba3fe0",
+        "git_blob_verified": "ca8f3ca43e9fa659c8d16d00624f57a6e99f1867",
+        "data_license": "CC0-1.0",
+        "hash_verified": true
+      }
+    },
+    {
+      "table": "dtm_movements_by_facility_type",
+      "file": "movements-by-facility-type.parquet",
+      "rows": 1875,
+      "bytes": 10461,
+      "sha256": "111d9530bd0c85dea0cc216c958edc33abaf334f87a3f922cbcdef6efdfe3092",
+      "candidate_keys_from_parser": [
+        "facility_type",
+        "movement",
+        "criminality",
+        "pull_date"
+      ],
+      "temporal_semantics": "snapshot",
+      "unit": "FY-to-date book-in/book-out counts by facility type; book-outs only have Total criminality",
+      "local_path": "sources/movements-by-facility-type.parquet",
+      "source": {
+        "repo": "deportationdata/ice-detention-management",
+        "commit": "5126c6e8482cb8d28d5a7704e96a9cab0df8b528",
+        "path": "data/detention-management-parquet.zip",
+        "url": "https://raw.githubusercontent.com/deportationdata/ice-detention-management/5126c6e8482cb8d28d5a7704e96a9cab0df8b528/data/detention-management-parquet.zip",
+        "bytes": 2133465,
+        "sha256": "1cca746d5caad9e7cf2e037e91984c98a18325a41d7b1a6fc2637b1f89ba3fe0",
+        "git_blob_verified": "ca8f3ca43e9fa659c8d16d00624f57a6e99f1867",
+        "data_license": "CC0-1.0",
+        "hash_verified": true
+      }
+    },
+    {
+      "table": "dtm_removals",
+      "file": "removals.parquet",
+      "rows": 128,
+      "bytes": 3477,
+      "sha256": "b24e0d186cab8e66e28e9fac2ffddba5b65498bef4d2b3fa2e3123de723cff97",
+      "candidate_keys_from_parser": [
+        "fiscal_year",
+        "pull_date"
+      ],
+      "temporal_semantics": "snapshot",
+      "unit": "FY-to-date removal counts including family-unit removals; not individual-removal events",
+      "local_path": "sources/removals.parquet",
+      "source": {
+        "repo": "deportationdata/ice-detention-management",
+        "commit": "5126c6e8482cb8d28d5a7704e96a9cab0df8b528",
+        "path": "data/detention-management-parquet.zip",
+        "url": "https://raw.githubusercontent.com/deportationdata/ice-detention-management/5126c6e8482cb8d28d5a7704e96a9cab0df8b528/data/detention-management-parquet.zip",
+        "bytes": 2133465,
+        "sha256": "1cca746d5caad9e7cf2e037e91984c98a18325a41d7b1a6fc2637b1f89ba3fe0",
+        "git_blob_verified": "ca8f3ca43e9fa659c8d16d00624f57a6e99f1867",
+        "data_license": "CC0-1.0",
+        "hash_verified": true
+      }
+    },
+    {
+      "table": "dtm_segregation",
+      "file": "segregation.parquet",
+      "rows": 1383,
+      "bytes": 6712,
+      "sha256": "b034679683038c22b7d13e5603cc8f647e617e6f80dd3c7afa70ac5e0032218b",
+      "candidate_keys_from_parser": [
+        "date",
+        "facility"
+      ],
+      "temporal_semantics": "latest_cell",
+      "unit": "Monthly segregation-placement count per facility; placements are not unique people",
+      "local_path": "sources/segregation.parquet",
+      "source": {
+        "repo": "deportationdata/ice-detention-management",
+        "commit": "5126c6e8482cb8d28d5a7704e96a9cab0df8b528",
+        "path": "data/detention-management-parquet.zip",
+        "url": "https://raw.githubusercontent.com/deportationdata/ice-detention-management/5126c6e8482cb8d28d5a7704e96a9cab0df8b528/data/detention-management-parquet.zip",
+        "bytes": 2133465,
+        "sha256": "1cca746d5caad9e7cf2e037e91984c98a18325a41d7b1a6fc2637b1f89ba3fe0",
+        "git_blob_verified": "ca8f3ca43e9fa659c8d16d00624f57a6e99f1867",
+        "data_license": "CC0-1.0",
+        "hash_verified": true
+      }
+    },
+    {
+      "table": "dtm_special_population_actions",
+      "file": "special-population-actions.parquet",
+      "rows": 468,
+      "bytes": 3785,
+      "sha256": "d56a9db42d670982b357e69b4eb836c4b1fca21b4f5f060f316921e33184c6aa",
+      "candidate_keys_from_parser": [
+        "population_group",
+        "action",
+        "data_fiscal_year",
+        "country"
+      ],
+      "temporal_semantics": "latest_cell",
+      "unit": "Annual action counts for special populations; nullable country applies only to country tables",
+      "local_path": "sources/special-population-actions.parquet",
+      "source": {
+        "repo": "deportationdata/ice-detention-management",
+        "commit": "5126c6e8482cb8d28d5a7704e96a9cab0df8b528",
+        "path": "data/detention-management-parquet.zip",
+        "url": "https://raw.githubusercontent.com/deportationdata/ice-detention-management/5126c6e8482cb8d28d5a7704e96a9cab0df8b528/data/detention-management-parquet.zip",
+        "bytes": 2133465,
+        "sha256": "1cca746d5caad9e7cf2e037e91984c98a18325a41d7b1a6fc2637b1f89ba3fe0",
+        "git_blob_verified": "ca8f3ca43e9fa659c8d16d00624f57a6e99f1867",
+        "data_license": "CC0-1.0",
+        "hash_verified": true
+      }
+    },
+    {
+      "table": "dtm_vulnerable_population",
+      "file": "vulnerable-population.parquet",
+      "rows": 114,
+      "bytes": 4587,
+      "sha256": "76eb40fa194dbc2913c6f906642c10270395aff86e8f34adaa087fd64aed0997",
+      "candidate_keys_from_parser": [
+        "placement_reason",
+        "data_fiscal_year",
+        "data_quarter"
+      ],
+      "temporal_semantics": "latest_cell",
+      "unit": "Quarterly segregation placement counts and average consecutive/cumulative days for vulnerable populations",
+      "local_path": "sources/vulnerable-population.parquet",
+      "source": {
+        "repo": "deportationdata/ice-detention-management",
+        "commit": "5126c6e8482cb8d28d5a7704e96a9cab0df8b528",
+        "path": "data/detention-management-parquet.zip",
+        "url": "https://raw.githubusercontent.com/deportationdata/ice-detention-management/5126c6e8482cb8d28d5a7704e96a9cab0df8b528/data/detention-management-parquet.zip",
+        "bytes": 2133465,
+        "sha256": "1cca746d5caad9e7cf2e037e91984c98a18325a41d7b1a6fc2637b1f89ba3fe0",
+        "git_blob_verified": "ca8f3ca43e9fa659c8d16d00624f57a6e99f1867",
+        "data_license": "CC0-1.0",
+        "hash_verified": true
+      }
+    }
+  ]
+}

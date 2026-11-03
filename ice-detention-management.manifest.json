@@ -1,0 +1,2606 @@
+{
+  "dataset": "ice-detention-management",
+  "built_utc": "2026-11-03T01:38:58.168854+00:00",
+  "validate_only": false,
+  "config": {
+    "memory_limit": "128MiB",
+    "threads": "1",
+    "max_temp_directory_size": "0B",
+    "preserve_insertion_order": "true",
+    "autoinstall_known_extensions": "false"
+  },
+  "physical_free_before": 5186818048,
+  "reserve_bytes": 536870912,
+  "working_budget_bytes": 33554432,
+  "tables": {
+    "dtm_adp_and_stay_length_by_agency_fy_ytd": {
+      "rows": 1551,
+      "schema": [
+        [
+          "_source_row",
+          "BIGINT",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "agency",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "criminality",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "adp_fy_ytd",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "avg_stay_length_days_fy_ytd",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "fiscal_year",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "file_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "pull_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "null_counts": {
+        "_source_row": 0,
+        "agency": 0,
+        "criminality": 0,
+        "adp_fy_ytd": 6,
+        "avg_stay_length_days_fy_ytd": 3,
+        "fiscal_year": 0,
+        "file_date": 0,
+        "pull_date": 0
+      },
+      "source_equality_differences": 0,
+      "source_ordinal_differences": 0,
+      "unit": "FY-to-date average daily population (people) and mean stay length (days)",
+      "temporal_semantics": "snapshot",
+      "candidate_key": [
+        "agency",
+        "criminality",
+        "fiscal_year",
+        "pull_date"
+      ],
+      "date_ranges": {
+        "file_date": [
+          "2019-10-07",
+          "2026-07-20"
+        ],
+        "pull_date": [
+          "2019-10-04",
+          "2026-07-11"
+        ]
+      },
+      "duplicate_key_groups": 0,
+      "file_before_pull_rows": 0
+    },
+    "dtm_adp_and_stay_length_by_agency_monthly": {
+      "rows": 1164,
+      "schema": [
+        [
+          "_source_row",
+          "BIGINT",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "agency",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "criminality",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "month",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "adp",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "avg_stay_length_days",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "fiscal_year",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "file_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "pull_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "null_counts": {
+        "_source_row": 0,
+        "agency": 0,
+        "criminality": 0,
+        "month": 0,
+        "date": 0,
+        "adp": 72,
+        "avg_stay_length_days": 36,
+        "fiscal_year": 0,
+        "file_date": 0,
+        "pull_date": 0
+      },
+      "source_equality_differences": 0,
+      "source_ordinal_differences": 0,
+      "unit": "Monthly average daily population (people) and mean stay length (days)",
+      "temporal_semantics": "latest_cell",
+      "candidate_key": [
+        "agency",
+        "criminality",
+        "date"
+      ],
+      "date_ranges": {
+        "date": [
+          "2018-10-01",
+          "2026-07-01"
+        ],
+        "file_date": [
+          "2019-10-07",
+          "2026-07-20"
+        ],
+        "pull_date": [
+          "2019-10-04",
+          "2026-07-11"
+        ]
+      },
+      "duplicate_key_groups": 0,
+      "file_before_pull_rows": 0,
+      "observation_after_pull_rows": 0
+    },
+    "dtm_atd_by_aor": {
+      "rows": 14657,
+      "schema": [
+        [
+          "_source_row",
+          "BIGINT",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "aor",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "technology",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "n_active",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "avg_length_in_program",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "fiscal_year",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "file_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "pull_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "null_counts": {
+        "_source_row": 0,
+        "aor": 0,
+        "technology": 3166,
+        "n_active": 5,
+        "avg_length_in_program": 5,
+        "fiscal_year": 0,
+        "file_date": 0,
+        "pull_date": 0
+      },
+      "source_equality_differences": 0,
+      "source_ordinal_differences": 0,
+      "unit": "Active alternative-to-detention participants and average days in program by AOR/technology; nullable technology is a subtotal",
+      "temporal_semantics": "snapshot",
+      "candidate_key": [
+        "aor",
+        "technology",
+        "pull_date"
+      ],
+      "date_ranges": {
+        "file_date": [
+          "2020-09-01",
+          "2026-07-20"
+        ],
+        "pull_date": [
+          "2020-08-08",
+          "2026-07-09"
+        ]
+      },
+      "duplicate_key_groups": 0,
+      "file_before_pull_rows": 0
+    },
+    "dtm_atd_court_appearances": {
+      "rows": 462,
+      "schema": [
+        [
+          "_source_row",
+          "BIGINT",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "hearing_type",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "metric",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "count",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "pct",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "fiscal_year",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "file_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "pull_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "null_counts": {
+        "_source_row": 0,
+        "hearing_type": 0,
+        "metric": 0,
+        "count": 0,
+        "pct": 0,
+        "fiscal_year": 0,
+        "file_date": 0,
+        "pull_date": 0
+      },
+      "source_equality_differences": 0,
+      "source_ordinal_differences": 0,
+      "unit": "Appearance count and percentage by hearing type and outcome; includes totals",
+      "temporal_semantics": "snapshot",
+      "candidate_key": [
+        "hearing_type",
+        "metric",
+        "pull_date"
+      ],
+      "date_ranges": {
+        "file_date": [
+          "2022-11-16",
+          "2026-07-20"
+        ],
+        "pull_date": [
+          "2022-10-31",
+          "2026-07-09"
+        ]
+      },
+      "duplicate_key_groups": 0,
+      "file_before_pull_rows": 0
+    },
+    "dtm_atd_population": {
+      "rows": 1099,
+      "schema": [
+        [
+          "_source_row",
+          "BIGINT",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "table",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "category",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "n_active",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "daily_tech_cost",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "alip",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "fiscal_year",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "file_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "pull_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "null_counts": {
+        "_source_row": 0,
+        "table": 0,
+        "category": 0,
+        "n_active": 0,
+        "daily_tech_cost": 596,
+        "alip": 503,
+        "fiscal_year": 0,
+        "file_date": 0,
+        "pull_date": 0
+      },
+      "source_equality_differences": 0,
+      "source_ordinal_differences": 0,
+      "unit": "Active participants; technology rows report daily cost USD, status rows report ALIP days",
+      "temporal_semantics": "snapshot",
+      "candidate_key": [
+        "table",
+        "category",
+        "pull_date"
+      ],
+      "date_ranges": {
+        "file_date": [
+          "2019-10-07",
+          "2026-07-20"
+        ],
+        "pull_date": [
+          "2019-10-07",
+          "2026-07-09"
+        ]
+      },
+      "duplicate_key_groups": 0,
+      "file_before_pull_rows": 0
+    },
+    "dtm_bond_stats": {
+      "rows": 330,
+      "schema": [
+        [
+          "_source_row",
+          "BIGINT",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "month",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "metric",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "unit",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "value",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "fiscal_year",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "file_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "pull_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "null_counts": {
+        "_source_row": 0,
+        "month": 0,
+        "date": 0,
+        "metric": 0,
+        "unit": 0,
+        "value": 0,
+        "fiscal_year": 0,
+        "file_date": 0,
+        "pull_date": 0
+      },
+      "source_equality_differences": 0,
+      "source_ordinal_differences": 0,
+      "unit": "Counts, percent, USD average bond, or ALOS days, distinguished by unit",
+      "temporal_semantics": "latest_cell",
+      "candidate_key": [
+        "date",
+        "metric"
+      ],
+      "date_ranges": {
+        "date": [
+          "2021-01-01",
+          "2026-06-01"
+        ],
+        "file_date": [
+          "2022-03-17",
+          "2026-07-20"
+        ],
+        "pull_date": [
+          "2022-03-07",
+          "2026-07-09"
+        ]
+      },
+      "duplicate_key_groups": 0,
+      "file_before_pull_rows": 0,
+      "observation_after_pull_rows": 0
+    },
+    "dtm_book_ins_by_arresting_agency_fy_ytd": {
+      "rows": 387,
+      "schema": [
+        [
+          "_source_row",
+          "BIGINT",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "arresting_agency",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "n_book_ins_ytd",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "fiscal_year",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "file_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "pull_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "null_counts": {
+        "_source_row": 0,
+        "arresting_agency": 0,
+        "n_book_ins_ytd": 0,
+        "fiscal_year": 0,
+        "file_date": 0,
+        "pull_date": 0
+      },
+      "source_equality_differences": 0,
+      "source_ordinal_differences": 0,
+      "unit": "FY-to-date count of book-ins by ICE/CBP/Total",
+      "temporal_semantics": "snapshot",
+      "candidate_key": [
+        "arresting_agency",
+        "fiscal_year",
+        "pull_date"
+      ],
+      "date_ranges": {
+        "file_date": [
+          "2019-10-07",
+          "2026-07-20"
+        ],
+        "pull_date": [
+          "2019-10-04",
+          "2026-07-11"
+        ]
+      },
+      "duplicate_key_groups": 0,
+      "file_before_pull_rows": 0
+    },
+    "dtm_book_ins_by_arresting_agency_monthly": {
+      "rows": 282,
+      "schema": [
+        [
+          "_source_row",
+          "BIGINT",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "arresting_agency",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "month",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "n_book_ins",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "fiscal_year",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "file_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "pull_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "null_counts": {
+        "_source_row": 0,
+        "arresting_agency": 0,
+        "month": 0,
+        "date": 0,
+        "n_book_ins": 0,
+        "fiscal_year": 0,
+        "file_date": 0,
+        "pull_date": 0
+      },
+      "source_equality_differences": 0,
+      "source_ordinal_differences": 0,
+      "unit": "Monthly book-in count by ICE/CBP/Total",
+      "temporal_semantics": "latest_cell",
+      "candidate_key": [
+        "arresting_agency",
+        "date"
+      ],
+      "date_ranges": {
+        "date": [
+          "2018-10-01",
+          "2026-07-01"
+        ],
+        "file_date": [
+          "2019-10-07",
+          "2026-07-20"
+        ],
+        "pull_date": [
+          "2019-10-04",
+          "2026-07-11"
+        ]
+      },
+      "duplicate_key_groups": 0,
+      "file_before_pull_rows": 0,
+      "observation_after_pull_rows": 0
+    },
+    "dtm_book_outs_by_reason_fy_ytd": {
+      "rows": 4521,
+      "schema": [
+        [
+          "_source_row",
+          "BIGINT",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "release_reason",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "criminality",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "n_book_outs_ytd",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "fiscal_year",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "file_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "pull_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "null_counts": {
+        "_source_row": 0,
+        "release_reason": 0,
+        "criminality": 0,
+        "n_book_outs_ytd": 0,
+        "fiscal_year": 0,
+        "file_date": 0,
+        "pull_date": 0
+      },
+      "source_equality_differences": 0,
+      "source_ordinal_differences": 0,
+      "unit": "FY-to-date final release/book-out count by reason and criminality",
+      "temporal_semantics": "snapshot",
+      "candidate_key": [
+        "release_reason",
+        "criminality",
+        "fiscal_year",
+        "pull_date"
+      ],
+      "date_ranges": {
+        "file_date": [
+          "2019-10-07",
+          "2026-07-20"
+        ],
+        "pull_date": [
+          "2019-10-04",
+          "2026-07-11"
+        ]
+      },
+      "duplicate_key_groups": 0,
+      "file_before_pull_rows": 0
+    },
+    "dtm_book_outs_by_reason_monthly": {
+      "rows": 2606,
+      "schema": [
+        [
+          "_source_row",
+          "BIGINT",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "release_reason",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "criminality",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "month",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "n_book_outs",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "fiscal_year",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "file_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "pull_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "null_counts": {
+        "_source_row": 0,
+        "release_reason": 0,
+        "criminality": 0,
+        "month": 0,
+        "date": 0,
+        "n_book_outs": 1,
+        "fiscal_year": 0,
+        "file_date": 0,
+        "pull_date": 0
+      },
+      "source_equality_differences": 0,
+      "source_ordinal_differences": 0,
+      "unit": "Monthly final release/book-out count by reason and criminality",
+      "temporal_semantics": "latest_cell",
+      "candidate_key": [
+        "release_reason",
+        "criminality",
+        "date"
+      ],
+      "date_ranges": {
+        "date": [
+          "2020-10-01",
+          "2026-07-01"
+        ],
+        "file_date": [
+          "2021-10-01",
+          "2026-07-20"
+        ],
+        "pull_date": [
+          "2021-09-25",
+          "2026-07-11"
+        ]
+      },
+      "duplicate_key_groups": 0,
+      "file_before_pull_rows": 0,
+      "observation_after_pull_rows": 0
+    },
+    "dtm_currently_detained_by_criminality": {
+      "rows": 1536,
+      "schema": [
+        [
+          "_source_row",
+          "BIGINT",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "criminality",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "arresting_agency",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "n_detained",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "share_of_total",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "fiscal_year",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "file_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "pull_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "null_counts": {
+        "_source_row": 0,
+        "criminality": 0,
+        "arresting_agency": 0,
+        "n_detained": 0,
+        "share_of_total": 512,
+        "fiscal_year": 0,
+        "file_date": 0,
+        "pull_date": 0
+      },
+      "source_equality_differences": 0,
+      "source_ordinal_differences": 0,
+      "unit": "Detained population count and arresting-agency share within each criminality category (fraction; source rounding retained)",
+      "temporal_semantics": "snapshot",
+      "candidate_key": [
+        "criminality",
+        "arresting_agency",
+        "pull_date"
+      ],
+      "date_ranges": {
+        "file_date": [
+          "2019-10-07",
+          "2026-07-20"
+        ],
+        "pull_date": [
+          "2019-10-07",
+          "2026-07-11"
+        ]
+      },
+      "duplicate_key_groups": 0,
+      "file_before_pull_rows": 0,
+      "criminality_total_groups": 512,
+      "criminality_total_mismatches": 0,
+      "share_denominator_comparisons": 1024,
+      "share_denominator_mismatches": 0
+    },
+    "dtm_currently_detained_by_disposition": {
+      "rows": 1738,
+      "schema": [
+        [
+          "_source_row",
+          "BIGINT",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "disposition",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "facility_type",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "n_detained",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "fiscal_year",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "file_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "pull_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "null_counts": {
+        "_source_row": 0,
+        "disposition": 0,
+        "facility_type": 0,
+        "n_detained": 0,
+        "fiscal_year": 0,
+        "file_date": 0,
+        "pull_date": 0
+      },
+      "source_equality_differences": 0,
+      "source_ordinal_differences": 0,
+      "unit": "Current detention population count by processing disposition and facility type",
+      "temporal_semantics": "snapshot",
+      "candidate_key": [
+        "disposition",
+        "facility_type",
+        "pull_date"
+      ],
+      "date_ranges": {
+        "file_date": [
+          "2019-10-07",
+          "2026-07-20"
+        ],
+        "pull_date": [
+          "2019-10-07",
+          "2026-07-11"
+        ]
+      },
+      "duplicate_key_groups": 0,
+      "file_before_pull_rows": 0
+    },
+    "dtm_facilities": {
+      "rows": 20430,
+      "schema": [
+        [
+          "_source_row",
+          "BIGINT",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "name",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "address",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "city",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "state",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "zip",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "aor",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "type_detailed",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "male_female",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "level_a",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "level_b",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "level_c",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "level_d",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "male_crim",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "male_non_crim",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "female_crim",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "female_non_crim",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "ice_threat_level_1",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "ice_threat_level_2",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "ice_threat_level_3",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "no_ice_threat_level",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "mandatory",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "guaranteed_minimum",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "last_inspection_type",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "last_inspection_standard",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "last_inspection_rating_final",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "last_inspection_date",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "second_to_last_inspection_type",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "s2l_inspection_standard",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "second_to_last_inspection_rating",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "second_to_last_inspection_date",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "odo_inspection_end_date",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "odo_last_inspection_standard",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "odo_final_rating",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "last_nak_inspection_standard",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "last_nak_inspection_rating",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "last_nakamoto_inspection_date",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "s2l_nak_inspection_type",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "last_inspection_end_date",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "pending_fy25_inspection",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "last_final_rating",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "odo_final_report_date",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "pending_fy24_inspection",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "fiscal_year",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "file_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "pull_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "null_counts": {
+        "_source_row": 0,
+        "name": 0,
+        "address": 236,
+        "city": 235,
+        "state": 240,
+        "zip": 236,
+        "aor": 235,
+        "type_detailed": 235,
+        "male_female": 561,
+        "level_a": 345,
+        "level_b": 263,
+        "level_c": 263,
+        "level_d": 263,
+        "male_crim": 263,
+        "male_non_crim": 263,
+        "female_crim": 263,
+        "female_non_crim": 263,
+        "ice_threat_level_1": 264,
+        "ice_threat_level_2": 263,
+        "ice_threat_level_3": 263,
+        "no_ice_threat_level": 263,
+        "mandatory": 371,
+        "guaranteed_minimum": 10186,
+        "last_inspection_type": 1043,
+        "last_inspection_standard": 5853,
+        "last_inspection_rating_final": 12788,
+        "last_inspection_date": 11550,
+        "second_to_last_inspection_type": 10763,
+        "s2l_inspection_standard": 12120,
+        "second_to_last_inspection_rating": 15167,
+        "second_to_last_inspection_date": 12161,
+        "odo_inspection_end_date": 17155,
+        "odo_last_inspection_standard": 16928,
+        "odo_final_rating": 16928,
+        "last_nak_inspection_standard": 17918,
+        "last_nak_inspection_rating": 17922,
+        "last_nakamoto_inspection_date": 17918,
+        "s2l_nak_inspection_type": 17918,
+        "last_inspection_end_date": 14591,
+        "pending_fy25_inspection": 19287,
+        "last_final_rating": 14639,
+        "odo_final_report_date": 20192,
+        "pending_fy24_inspection": 20333,
+        "fiscal_year": 0,
+        "file_date": 0,
+        "pull_date": 0
+      },
+      "source_equality_differences": 0,
+      "source_ordinal_differences": 0,
+      "unit": "Facility-by-release characteristics: beds, threat composition, inspection information; not the geocoded facility directory",
+      "temporal_semantics": "snapshot",
+      "candidate_key": [],
+      "date_ranges": {
+        "file_date": [
+          "2019-10-07",
+          "2026-07-20"
+        ],
+        "pull_date": [
+          "2019-10-07",
+          "2026-07-09"
+        ]
+      },
+      "file_before_pull_rows": 0
+    },
+    "dtm_facility_alos": {
+      "rows": 2045,
+      "schema": [
+        [
+          "_source_row",
+          "BIGINT",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "name",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "alos_fiscal_year",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "alos",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "fiscal_year",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "file_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "pull_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "null_counts": {
+        "_source_row": 0,
+        "name": 0,
+        "alos_fiscal_year": 0,
+        "alos": 2,
+        "fiscal_year": 0,
+        "file_date": 0,
+        "pull_date": 0
+      },
+      "source_equality_differences": 0,
+      "source_ordinal_differences": 0,
+      "unit": "Annual mean stay length (days) for named facility",
+      "temporal_semantics": "latest_cell",
+      "candidate_key": [
+        "name",
+        "alos_fiscal_year"
+      ],
+      "date_ranges": {
+        "file_date": [
+          "2019-10-07",
+          "2026-07-20"
+        ],
+        "pull_date": [
+          "2019-10-07",
+          "2026-07-09"
+        ]
+      },
+      "duplicate_key_groups": 0,
+      "file_before_pull_rows": 0
+    },
+    "dtm_fear_decision_time": {
+      "rows": 21,
+      "schema": [
+        [
+          "_source_row",
+          "BIGINT",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "data_fiscal_year",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "facility_type",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "decision_days",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "fiscal_year",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "file_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "pull_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "null_counts": {
+        "_source_row": 0,
+        "data_fiscal_year": 0,
+        "facility_type": 0,
+        "decision_days": 0,
+        "fiscal_year": 0,
+        "file_date": 0,
+        "pull_date": 0
+      },
+      "source_equality_differences": 0,
+      "source_ordinal_differences": 0,
+      "unit": "Time from USCIS fear decision to ICE release (days), fiscal-year/facility-type series",
+      "temporal_semantics": "latest_cell",
+      "candidate_key": [
+        "data_fiscal_year",
+        "facility_type"
+      ],
+      "date_ranges": {
+        "file_date": [
+          "2021-01-14",
+          "2026-07-20"
+        ],
+        "pull_date": [
+          "2020-10-02",
+          "2026-07-11"
+        ]
+      },
+      "duplicate_key_groups": 0,
+      "file_before_pull_rows": 0
+    },
+    "dtm_fear_decisions_by_facility_type": {
+      "rows": 348,
+      "schema": [
+        [
+          "_source_row",
+          "BIGINT",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "facility_type",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "total_detained",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "fiscal_year",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "file_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "pull_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "null_counts": {
+        "_source_row": 0,
+        "facility_type": 0,
+        "total_detained": 0,
+        "fiscal_year": 0,
+        "file_date": 0,
+        "pull_date": 0
+      },
+      "source_equality_differences": 0,
+      "source_ordinal_differences": 0,
+      "unit": "Current detained count in fear-decision source table by facility type",
+      "temporal_semantics": "snapshot",
+      "candidate_key": [
+        "facility_type",
+        "pull_date"
+      ],
+      "date_ranges": {
+        "file_date": [
+          "2020-09-01",
+          "2026-07-20"
+        ],
+        "pull_date": [
+          "2020-08-15",
+          "2026-07-11"
+        ]
+      },
+      "duplicate_key_groups": 0,
+      "file_before_pull_rows": 0
+    },
+    "dtm_iclos_and_detainees": {
+      "rows": 1665,
+      "schema": [
+        [
+          "_source_row",
+          "BIGINT",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "section",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "population_type",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "duration_bucket",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "month",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "period",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "value",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "fiscal_year",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "file_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "pull_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "null_counts": {
+        "_source_row": 0,
+        "section": 0,
+        "population_type": 0,
+        "duration_bucket": 290,
+        "month": 0,
+        "date": 0,
+        "period": 0,
+        "value": 0,
+        "fiscal_year": 0,
+        "file_date": 0,
+        "pull_date": 0
+      },
+      "source_equality_differences": 0,
+      "source_ordinal_differences": 0,
+      "unit": "Mid/end-month population count by ICLOS/detainees section and duration bucket",
+      "temporal_semantics": "latest_cell",
+      "candidate_key": [
+        "section",
+        "population_type",
+        "duration_bucket",
+        "date",
+        "period"
+      ],
+      "date_ranges": {
+        "date": [
+          "2020-07-01",
+          "2025-12-01"
+        ],
+        "file_date": [
+          "2023-01-09",
+          "2026-07-20"
+        ],
+        "pull_date": [
+          "2022-12-27",
+          "2026-07-09"
+        ]
+      },
+      "duplicate_key_groups": 0,
+      "file_before_pull_rows": 0,
+      "observation_after_pull_rows": 0
+    },
+    "dtm_movements_by_facility_type": {
+      "rows": 1875,
+      "schema": [
+        [
+          "_source_row",
+          "BIGINT",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "facility_type",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "movement",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "criminality",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "n_movements",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "fiscal_year",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "file_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "pull_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "null_counts": {
+        "_source_row": 0,
+        "facility_type": 0,
+        "movement": 0,
+        "criminality": 0,
+        "n_movements": 130,
+        "fiscal_year": 0,
+        "file_date": 0,
+        "pull_date": 0
+      },
+      "source_equality_differences": 0,
+      "source_ordinal_differences": 0,
+      "unit": "FY-to-date book-in/book-out counts by facility type; book-outs only have Total criminality",
+      "temporal_semantics": "snapshot",
+      "candidate_key": [
+        "facility_type",
+        "movement",
+        "criminality",
+        "pull_date"
+      ],
+      "date_ranges": {
+        "file_date": [
+          "2019-10-07",
+          "2026-07-20"
+        ],
+        "pull_date": [
+          "2019-10-04",
+          "2026-07-11"
+        ]
+      },
+      "duplicate_key_groups": 0,
+      "file_before_pull_rows": 0
+    },
+    "dtm_removals": {
+      "rows": 128,
+      "schema": [
+        [
+          "_source_row",
+          "BIGINT",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "n_removals_fy_ytd",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "famu_removals",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "fiscal_year",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "file_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "pull_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "null_counts": {
+        "_source_row": 0,
+        "n_removals_fy_ytd": 0,
+        "famu_removals": 0,
+        "fiscal_year": 0,
+        "file_date": 0,
+        "pull_date": 0
+      },
+      "source_equality_differences": 0,
+      "source_ordinal_differences": 0,
+      "unit": "FY-to-date removal counts including family-unit removals; not individual-removal events",
+      "temporal_semantics": "snapshot",
+      "candidate_key": [
+        "fiscal_year",
+        "pull_date"
+      ],
+      "date_ranges": {
+        "file_date": [
+          "2019-10-07",
+          "2026-07-20"
+        ],
+        "pull_date": [
+          "2019-10-04",
+          "2026-07-11"
+        ]
+      },
+      "duplicate_key_groups": 0,
+      "file_before_pull_rows": 0
+    },
+    "dtm_segregation": {
+      "rows": 1383,
+      "schema": [
+        [
+          "_source_row",
+          "BIGINT",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "month",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "facility",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "placement_count",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "fiscal_year",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "file_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "pull_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "null_counts": {
+        "_source_row": 0,
+        "month": 0,
+        "date": 0,
+        "facility": 0,
+        "placement_count": 0,
+        "fiscal_year": 0,
+        "file_date": 0,
+        "pull_date": 0
+      },
+      "source_equality_differences": 0,
+      "source_ordinal_differences": 0,
+      "unit": "Monthly segregation-placement count per facility; placements are not unique people",
+      "temporal_semantics": "latest_cell",
+      "candidate_key": [
+        "date",
+        "facility"
+      ],
+      "date_ranges": {
+        "date": [
+          "2024-04-01",
+          "2026-06-01"
+        ],
+        "file_date": [
+          "2025-09-25",
+          "2026-07-20"
+        ],
+        "pull_date": [
+          "2025-09-15",
+          "2026-07-09"
+        ]
+      },
+      "duplicate_key_groups": 0,
+      "file_before_pull_rows": 0,
+      "observation_after_pull_rows": 0
+    },
+    "dtm_special_population_actions": {
+      "rows": 468,
+      "schema": [
+        [
+          "_source_row",
+          "BIGINT",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "population_group",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "action",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "data_fiscal_year",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "country",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "value",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "fiscal_year",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "file_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "pull_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "null_counts": {
+        "_source_row": 0,
+        "population_group": 0,
+        "action": 0,
+        "data_fiscal_year": 0,
+        "country": 81,
+        "value": 0,
+        "fiscal_year": 0,
+        "file_date": 0,
+        "pull_date": 0
+      },
+      "source_equality_differences": 0,
+      "source_ordinal_differences": 0,
+      "unit": "Annual action counts for special populations; nullable country applies only to country tables",
+      "temporal_semantics": "latest_cell",
+      "candidate_key": [
+        "population_group",
+        "action",
+        "data_fiscal_year",
+        "country"
+      ],
+      "date_ranges": {
+        "file_date": [
+          "2026-07-20",
+          "2026-07-20"
+        ],
+        "pull_date": [
+          "2026-07-09",
+          "2026-07-09"
+        ]
+      },
+      "duplicate_key_groups": 0,
+      "file_before_pull_rows": 0
+    },
+    "dtm_vulnerable_population": {
+      "rows": 114,
+      "schema": [
+        [
+          "_source_row",
+          "BIGINT",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "placement_reason",
+          "VARCHAR",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "data_fiscal_year",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "data_quarter",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "n_placements",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "avg_consecutive_days",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "avg_cumulative_days",
+          "DOUBLE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "fiscal_year",
+          "INTEGER",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "file_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ],
+        [
+          "pull_date",
+          "DATE",
+          "YES",
+          null,
+          null,
+          null
+        ]
+      ],
+      "null_counts": {
+        "_source_row": 0,
+        "placement_reason": 0,
+        "data_fiscal_year": 0,
+        "data_quarter": 0,
+        "n_placements": 0,
+        "avg_consecutive_days": 0,
+        "avg_cumulative_days": 0,
+        "fiscal_year": 0,
+        "file_date": 0,
+        "pull_date": 0
+      },
+      "source_equality_differences": 0,
+      "source_ordinal_differences": 0,
+      "unit": "Quarterly segregation placement counts and average consecutive/cumulative days for vulnerable populations",
+      "temporal_semantics": "latest_cell",
+      "candidate_key": [
+        "placement_reason",
+        "data_fiscal_year",
+        "data_quarter"
+      ],
+      "date_ranges": {
+        "file_date": [
+          "2023-03-31",
+          "2026-07-20"
+        ],
+        "pull_date": [
+          "2023-03-20",
+          "2026-07-09"
+        ]
+      },
+      "duplicate_key_groups": 0,
+      "file_before_pull_rows": 0
+    }
+  },
+  "source_hashes_verified": true,
+  "duckdb": "1.5.5",
+  "status": "passed source-preserving ingestion; source anomalies retained for review",
+  "physical_free_after": 5176332288,
+  "database_bytes": 10498048,
+  "database_sha256": "b29a199fe88141973912af8b62a3c4d26dc0bf51f7ccc097a528176e385e9201",
+  "final_budget_check": {
+    "work_bytes": 10498048,
+    "free_bytes": 5176332288
+  }
+}

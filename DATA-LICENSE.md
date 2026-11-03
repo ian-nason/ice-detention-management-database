@@ -1,0 +1,1 @@
+The publisher labels these data CC0 at https://deportationdata.org/data/processed/ice.html . The source repository has no explicit code LICENSE; this repository uses an independently authored importer and copies no upstream parser code.

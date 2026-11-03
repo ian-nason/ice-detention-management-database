@@ -1,0 +1,9 @@
+sources/
+*.duckdb
+*.duckdb.wal
+.*-build-*/
+evidence/
+__pycache__/
+.venv/
+prior-v0/
+revised/

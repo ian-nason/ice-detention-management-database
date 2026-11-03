@@ -1,0 +1,1 @@
+SELECT fiscal_year, pull_date, n_book_ins_ytd FROM dtm_book_ins_by_arresting_agency_fy_ytd WHERE arresting_agency='Total' QUALIFY row_number() OVER (PARTITION BY fiscal_year ORDER BY pull_date DESC, file_date DESC)=1 ORDER BY fiscal_year DESC LIMIT 3
